@@ -38,6 +38,13 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+
+  --text-purple: rgba(67, 56, 202, 1);
+  --text-purple-dark: rgba(79, 70, 229, 1);
+  --text-black: rgba(17, 24, 39, 1);
+  --text-white-100: rgba(229, 231, 235, 1);
+  --text-yellow: rgba(255, 249, 37, 1);
+  --text-yellow-dark: rgba(255, 216, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,16 +90,17 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+
+  background: url('../public/static/mesh-gradient.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFC33;
+  height: 100%;
 }
 
 body {
   color: rbg(--foreground-rgb);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
