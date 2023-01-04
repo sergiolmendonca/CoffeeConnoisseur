@@ -52,7 +52,7 @@ const CoffeeStore = (props) => {
                 <div className={styles.col1}>
                     <div className={styles.backToHomeLink}>
                         <Link href="/">
-                            <button>Back to home { router.query.id }</button>
+                            Back to home
                         </Link>
                     </div>
                     <div className={styles.nameWrapper}>
@@ -61,17 +61,17 @@ const CoffeeStore = (props) => {
                     <Image alt={name} src={imgUrl} width={600} height={360}
                         className={styles.storeImg} />
                 </div>
-                <div className={classNames("glass", styles.col1)}>
+                <div className={classNames("glass", styles.col2)}>
                     <div className={styles.iconWrapper}>
-                        <Image alt="" src="" width={24} height={24} />
+                        <Image alt="" src="/static/icons/place.svg" width={24} height={24} />
                         <p className={styles.text}>{address}</p>
                     </div>
                     <div className={styles.iconWrapper}>
-                        <Image alt="" src="" width={24} height={24} />
+                        <Image alt="" src="/static/icons/nearMe.svg" width={24} height={24} />
                         <p className={styles.text}>{neighbourhood}</p>
                     </div>
                     <div className={styles.iconWrapper}>
-                        <Image alt="" src="" width={24} height={24} />
+                        <Image alt="" src="/static/icons/star.svg" width={24} height={24} />
                         <p className={styles.text}>1</p>
                     </div>
 
