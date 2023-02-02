@@ -44,7 +44,7 @@ const CoffeeStore = (props) => {
     const HandleUpvoteButton = () => {
         console.log("up vote");
     };
-
+    
     return (
         <div className={styles.layout}>
             <Head>
@@ -70,7 +70,7 @@ const CoffeeStore = (props) => {
                     </div>
                     <div className={styles.iconWrapper}>
                         <Image alt="" src="/static/icons/nearMe.svg" width={24} height={24} />
-                        <p className={styles.text}>{location.post_town}</p>
+                        <p className={styles.text}>{location.locality}</p>
                     </div>
                     <div className={styles.iconWrapper}>
                         <Image alt="" src="/static/icons/star.svg" width={24} height={24} />
